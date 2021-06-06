@@ -1,19 +1,22 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "myapp",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "npm install inherits && mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafa87sch/testNodeCk.git"
+  "engines": {
+    "node": "^4.6.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafa87sch/testNodeCk/issues"
+  "dependencies": {
+    "express": "^4.14.0",
+    "http-errors": "^1.7.0",
+    "mysql": "^2.10.2"
   },
-  "homepage": "https://github.com/rafa87sch/testNodeCk#readme"
+  "devDependencies": {
+    "inherits": "^2.0.3",
+    "mocha": "^5.2.0",
+    "ms": "^2.1.1"
+  }
 }
